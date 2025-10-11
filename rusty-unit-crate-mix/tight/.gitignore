@@ -1,0 +1,10 @@
+# build output
+target/
+
+# editor backups
+*~
+
+# test files
+tight.json
+.tight/
+analysis/**

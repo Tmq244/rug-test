@@ -1,0 +1,59 @@
+date::test::all_86400_seconds: test
+date::test::big_day: test
+date::test::big_day2: test
+date::test::big_hour: test
+date::test::big_minute: test
+date::test::big_month: test
+date::test::big_second: test
+date::test::break_data: test
+date::test::first_731_days: test
+date::test::leap_second: test
+date::test::milliseconds: test
+date::test::random_past: test
+date::test::random_wide_range: test
+date::test::smoke_tests_format: test
+date::test::smoke_tests_format_micros: test
+date::test::smoke_tests_format_millis: test
+date::test::smoke_tests_format_nanos: test
+date::test::smoke_tests_parse: test
+date::test::the_731_consecutive_days: test
+date::test::upper_bound: test
+date::test::weak_smoke_tests: test
+date::test::zero_day: test
+date::test::zero_month: test
+date::tests_rug_12::test_invalid_digit: test
+date::tests_rug_12::test_rug: test
+date::tests_rug_13::test_parse_rfc3339: test
+date::tests_rug_14::test_parse_rfc3339_weak: test
+date::tests_rug_15::test_is_leap_year: test
+date::tests_rug_16::test_rug: test
+date::tests_rug_17::test_rug: test
+date::tests_rug_18::test_rug: test
+date::tests_rug_19::test_rug: test
+date::tests_rug_20::test_rug: test
+date::tests_rug_21::test_rug: test
+duration::test::all_86400_seconds: test
+duration::test::random_any: test
+duration::test::random_second: test
+duration::test::test_combo: test
+duration::test::test_nice_error_message: test
+duration::test::test_overlow: test
+duration::test::test_units: test
+duration::tests_rug_11::test_rug: test
+duration::tests_rug_1::test_rug: test
+duration::tests_rug_2::test_rug: test
+duration::tests_rug_5::test_mul: test
+duration::tests_rug_6::test_rug: test
+duration::tests_rug_6::test_rug_overflow: test
+wrapper::tests_rug_23::test_rug: test
+wrapper::tests_rug_24::test_rug: test
+wrapper::tests_rug_27::test_rug: test
+wrapper::tests_rug_29::test_rug: test
+
+51 tests, 0 benchmarks
+src/duration.rs - duration::format_duration (line 246): test
+src/duration.rs - duration::parse_duration (line 223): test
+src/wrapper.rs - wrapper::Duration (line 18): test
+src/wrapper.rs - wrapper::Timestamp (line 39): test
+
+4 tests, 0 benchmarks
