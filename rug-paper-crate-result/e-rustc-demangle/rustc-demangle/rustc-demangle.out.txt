@@ -1,0 +1,609 @@
+-----------------
+src/legacy.rs legacy::demangle
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++legacy::demangle(&p0);
++crate::legacy::demangle(&p0);
++crate::legacy::demangle(&p0);
+-----------------
+src/legacy.rs legacy::is_rust_hash
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++legacy::is_rust_hash(&p0);
++crate::legacy::is_rust_hash(&p0);
++crate::legacy::is_rust_hash(&p0);
+-----------------
+src/v0.rs v0::demangle
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++v0::demangle(&p0);
++crate::v0::demangle(&p0);
++crate::v0::demangle(&p0);
+-----------------
+src/v0.rs v0::HexNibbles::<'s>::try_parse_str_chars::{closure#2}::{closure#0}::utf8_len_from_first_byte
+deps:{}
+candidates:{}
+let mut p0 = 0u8; // None+u8
++v0::HexNibbles::<'s>::try_parse_str_chars::{closure#2}::{closure#0}::utf8_len_from_first_byte(p0);
++crate::v0::HexNibbles::<'s>::try_parse_str_chars::{closure#2}::{closure#0}::utf8_len_from_first_byte(p0);
++<v0::HexNibbles<'s>>::try_parse_str_chars::utf8_len_from_first_byte(p0);
+-----------------
+src/v0.rs v0::basic_type
+deps:{}
+candidates:{}
+let mut p0 = 0u8; // None+u8
++v0::basic_type(p0);
++crate::v0::basic_type(p0);
++crate::v0::basic_type(p0);
+-----------------
+src/lib.rs demangle
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++demangle(&p0);
++crate::demangle(&p0);
++crate::demangle(&p0);
+-----------------
+src/lib.rs try_demangle
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++try_demangle(&p0);
++crate::try_demangle(&p0);
++crate::try_demangle(&p0);
+-----------------
+src/lib.rs is_symbol_like
+deps:{}
+candidates:{}
+let mut p0 = "sample"; // None+&str
++is_symbol_like(&p0);
++crate::is_symbol_like(&p0);
++crate::is_symbol_like(&p0);
+-----------------
+src/lib.rs is_ascii_alphanumeric
+deps:{}
+candidates:{}
+let mut p0 = 'a'; // None+char
++is_ascii_alphanumeric(p0);
++crate::is_ascii_alphanumeric(p0);
++crate::is_ascii_alphanumeric(p0);
+-----------------
+src/lib.rs is_ascii_punctuation
+deps:{}
+candidates:{}
+let mut p0 = 'a'; // None+char
++is_ascii_punctuation(p0);
++crate::is_ascii_punctuation(p0);
++crate::is_ascii_punctuation(p0);
+-----------------
+src/legacy.rs <legacy::Demangle<'a> as core::fmt::Display>::fmt
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // legacy::Demangle<'a>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<legacy::Demangle<'a> as core::fmt::Display>::fmt(p0, p1);
++crate::<legacy::Demangle<'a> as core::fmt::Display>::fmt(p0, p1);
++<legacy::Demangle<'a>>::fmt(p0, p1);
+-----------------
+src/v0.rs <v0::ParseError as core::cmp::PartialEq>::eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::ParseError
+let mut p1 = & MaybeUninit::uninit().assume_init(); // v0::ParseError
++p0.eq(p1);
++<v0::ParseError as core::cmp::PartialEq>::eq(p0, p1);
++crate::<v0::ParseError as core::cmp::PartialEq>::eq(p0, p1);
++<v0::ParseError>::eq(p0, p1);
+-----------------
+src/v0.rs <v0::ParseError as core::cmp::Eq>::assert_receiver_is_total_eq
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::ParseError
++p0.assert_receiver_is_total_eq();
++<v0::ParseError as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++crate::<v0::ParseError as core::cmp::Eq>::assert_receiver_is_total_eq(p0);
++<v0::ParseError>::assert_receiver_is_total_eq(p0);
+-----------------
+src/v0.rs <v0::ParseError as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::ParseError
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<v0::ParseError as core::fmt::Debug>::fmt(p0, p1);
++crate::<v0::ParseError as core::fmt::Debug>::fmt(p0, p1);
++<v0::ParseError>::fmt(p0, p1);
+-----------------
+src/v0.rs <v0::Demangle<'s> as core::fmt::Display>::fmt
+'s
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::Demangle<'s>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<v0::Demangle<'s> as core::fmt::Display>::fmt(p0, p1);
++crate::<v0::Demangle<'s> as core::fmt::Display>::fmt(p0, p1);
++<v0::Demangle<'s>>::fmt(p0, p1);
+-----------------
+src/v0.rs v0::Ident::<'s>::try_small_punycode_decode
+'s
+deps:{"v0::Ident::<'s>::try_small_punycode_decode":{"F":["core::ops::FnOnce","core::marker::Sized"],"R":["core::marker::Sized"]}}
+candidates:{"v0::Ident::<'s>::try_small_punycode_decode":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::Ident<'s>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.try_small_punycode_decode(p1);
++v0::Ident::<'s>::try_small_punycode_decode(p0, p1);
++crate::v0::Ident::<'s>::try_small_punycode_decode(p0, p1);
++<v0::Ident<'s>>::try_small_punycode_decode(p0, p1);
+-----------------
+src/v0.rs v0::Ident::<'s>::punycode_decode
+'s
+deps:{"v0::Ident::<'s>::punycode_decode":{"F":["core::marker::Sized","core::ops::FnMut"]}}
+candidates:{"v0::Ident::<'s>::punycode_decode":{}}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::Ident<'s>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.punycode_decode(p1);
++v0::Ident::<'s>::punycode_decode(p0, p1);
++crate::v0::Ident::<'s>::punycode_decode(p0, p1);
++<v0::Ident<'s>>::punycode_decode(p0, p1);
+-----------------
+src/v0.rs <v0::Ident<'s> as core::fmt::Display>::fmt
+'s
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::Ident<'s>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<v0::Ident<'s> as core::fmt::Display>::fmt(p0, p1);
++crate::<v0::Ident<'s> as core::fmt::Display>::fmt(p0, p1);
++<v0::Ident<'s>>::fmt(p0, p1);
+-----------------
+src/v0.rs v0::HexNibbles::<'s>::try_parse_uint
+'s
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::HexNibbles<'s>
++p0.try_parse_uint();
++v0::HexNibbles::<'s>::try_parse_uint(p0);
++crate::v0::HexNibbles::<'s>::try_parse_uint(p0);
++<v0::HexNibbles<'s>>::try_parse_uint(p0);
+-----------------
+src/v0.rs v0::HexNibbles::<'s>::try_parse_str_chars
+'s
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::HexNibbles<'s>
++p0.try_parse_str_chars();
++v0::HexNibbles::<'s>::try_parse_str_chars(p0);
++crate::v0::HexNibbles::<'s>::try_parse_str_chars(p0);
++<v0::HexNibbles<'s>>::try_parse_str_chars(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::push_depth
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.push_depth();
++v0::Parser::<'s>::push_depth(p0);
++crate::v0::Parser::<'s>::push_depth(p0);
++<v0::Parser<'s>>::push_depth(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::pop_depth
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.pop_depth();
++v0::Parser::<'s>::pop_depth(p0);
++crate::v0::Parser::<'s>::pop_depth(p0);
++<v0::Parser<'s>>::pop_depth(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::peek
+'s
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.peek();
++v0::Parser::<'s>::peek(p0);
++crate::v0::Parser::<'s>::peek(p0);
++<v0::Parser<'s>>::peek(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::eat
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
+let mut p1 = 0u8; // None+u8
++p0.eat(p1);
++v0::Parser::<'s>::eat(p0, p1);
++crate::v0::Parser::<'s>::eat(p0, p1);
++<v0::Parser<'s>>::eat(p0, p1);
+-----------------
+src/v0.rs v0::Parser::<'s>::next
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.next();
++v0::Parser::<'s>::next(p0);
++crate::v0::Parser::<'s>::next(p0);
++<v0::Parser<'s>>::next(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::hex_nibbles
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.hex_nibbles();
++v0::Parser::<'s>::hex_nibbles(p0);
++crate::v0::Parser::<'s>::hex_nibbles(p0);
++<v0::Parser<'s>>::hex_nibbles(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::digit_10
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.digit_10();
++v0::Parser::<'s>::digit_10(p0);
++crate::v0::Parser::<'s>::digit_10(p0);
++<v0::Parser<'s>>::digit_10(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::digit_62
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.digit_62();
++v0::Parser::<'s>::digit_62(p0);
++crate::v0::Parser::<'s>::digit_62(p0);
++<v0::Parser<'s>>::digit_62(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::integer_62
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.integer_62();
++v0::Parser::<'s>::integer_62(p0);
++crate::v0::Parser::<'s>::integer_62(p0);
++<v0::Parser<'s>>::integer_62(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::opt_integer_62
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
+let mut p1 = 0u8; // None+u8
++p0.opt_integer_62(p1);
++v0::Parser::<'s>::opt_integer_62(p0, p1);
++crate::v0::Parser::<'s>::opt_integer_62(p0, p1);
++<v0::Parser<'s>>::opt_integer_62(p0, p1);
+-----------------
+src/v0.rs v0::Parser::<'s>::disambiguator
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.disambiguator();
++v0::Parser::<'s>::disambiguator(p0);
++crate::v0::Parser::<'s>::disambiguator(p0);
++<v0::Parser<'s>>::disambiguator(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::namespace
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.namespace();
++v0::Parser::<'s>::namespace(p0);
++crate::v0::Parser::<'s>::namespace(p0);
++<v0::Parser<'s>>::namespace(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::backref
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.backref();
++v0::Parser::<'s>::backref(p0);
++crate::v0::Parser::<'s>::backref(p0);
++<v0::Parser<'s>>::backref(p0);
+-----------------
+src/v0.rs v0::Parser::<'s>::ident
+'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Parser<'s>
++p0.ident();
++v0::Parser::<'s>::ident(p0);
++crate::v0::Parser::<'s>::ident(p0);
++<v0::Parser<'s>>::ident(p0);
+-----------------
+src/v0.rs v0::ParseError::message
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // v0::ParseError
++p0.message();
++v0::ParseError::message(p0);
++crate::v0::ParseError::message(p0);
++<v0::ParseError>::message(p0);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::eat
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = 0u8; // None+u8
++p0.eat(p1);
++v0::Printer::<'a, 'b, 's>::eat(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::eat(p0, p1);
++<v0::Printer<'a, 'b, 's>>::eat(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::skipping_printing
+'a,'b,'s
+deps:{"v0::Printer::<'a, 'b, 's>::skipping_printing":{"F":["core::marker::Sized","core::ops::FnOnce"]}}
+candidates:{"v0::Printer::<'a, 'b, 's>::skipping_printing":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.skipping_printing(p1);
++v0::Printer::<'a, 'b, 's>::skipping_printing(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::skipping_printing(p0, p1);
++<v0::Printer<'a, 'b, 's>>::skipping_printing(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_backref
+'a,'b,'s
+deps:{"v0::Printer::<'a, 'b, 's>::print_backref":{"F":["core::ops::FnOnce","core::marker::Sized"]}}
+candidates:{"v0::Printer::<'a, 'b, 's>::print_backref":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.print_backref(p1);
++v0::Printer::<'a, 'b, 's>::print_backref(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::print_backref(p0, p1);
++<v0::Printer<'a, 'b, 's>>::print_backref(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::pop_depth
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
++p0.pop_depth();
++v0::Printer::<'a, 'b, 's>::pop_depth(p0);
++crate::v0::Printer::<'a, 'b, 's>::pop_depth(p0);
++<v0::Printer<'a, 'b, 's>>::pop_depth(p0);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print
+'a,'b,'s
+deps:{"v0::Printer::<'a, 'b, 's>::print":{"impl fmt::Display":["core::fmt::Display","core::marker::Sized"]}}
+candidates:{"v0::Printer::<'a, 'b, 's>::print":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = MaybeUninit::uninit().assume_init(); // impl fmt::Display
++p0.print(p1);
++v0::Printer::<'a, 'b, 's>::print(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::print(p0, p1);
++<v0::Printer<'a, 'b, 's>>::print(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_quoted_escaped_chars
+'a,'b,'s
+deps:{"v0::Printer::<'a, 'b, 's>::print_quoted_escaped_chars":{"impl Iterator<Item = char>":["core::marker::Sized","core::iter::Iterator"]}}
+candidates:{"v0::Printer::<'a, 'b, 's>::print_quoted_escaped_chars":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = 'a'; // None+char
+let mut p2 = MaybeUninit::uninit().assume_init(); // impl Iterator<Item = char>
++p0.print_quoted_escaped_chars(p1, p2);
++v0::Printer::<'a, 'b, 's>::print_quoted_escaped_chars(p0, p1, p2);
++crate::v0::Printer::<'a, 'b, 's>::print_quoted_escaped_chars(p0, p1, p2);
++<v0::Printer<'a, 'b, 's>>::print_quoted_escaped_chars(p0, p1, p2);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_lifetime_from_index
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = 0u64; // None+u64
++p0.print_lifetime_from_index(p1);
++v0::Printer::<'a, 'b, 's>::print_lifetime_from_index(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::print_lifetime_from_index(p0, p1);
++<v0::Printer<'a, 'b, 's>>::print_lifetime_from_index(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::in_binder
+'a,'b,'s
+deps:{"v0::Printer::<'a, 'b, 's>::in_binder":{"F":["core::ops::FnOnce","core::marker::Sized"]}}
+candidates:{"v0::Printer::<'a, 'b, 's>::in_binder":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
++p0.in_binder(p1);
++v0::Printer::<'a, 'b, 's>::in_binder(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::in_binder(p0, p1);
++<v0::Printer<'a, 'b, 's>>::in_binder(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_sep_list
+'a,'b,'s
+deps:{"v0::Printer::<'a, 'b, 's>::print_sep_list":{"F":["core::marker::Sized","core::ops::Fn"]}}
+candidates:{"v0::Printer::<'a, 'b, 's>::print_sep_list":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = MaybeUninit::uninit().assume_init(); // F
+let mut p2 = "sample"; // None+&str
++p0.print_sep_list(p1, &p2);
++v0::Printer::<'a, 'b, 's>::print_sep_list(p0, p1, &p2);
++crate::v0::Printer::<'a, 'b, 's>::print_sep_list(p0, p1, &p2);
++<v0::Printer<'a, 'b, 's>>::print_sep_list(p0, p1, &p2);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_path
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = true; // None+bool
++p0.print_path(p1);
++v0::Printer::<'a, 'b, 's>::print_path(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::print_path(p0, p1);
++<v0::Printer<'a, 'b, 's>>::print_path(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_generic_arg
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
++p0.print_generic_arg();
++v0::Printer::<'a, 'b, 's>::print_generic_arg(p0);
++crate::v0::Printer::<'a, 'b, 's>::print_generic_arg(p0);
++<v0::Printer<'a, 'b, 's>>::print_generic_arg(p0);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_type
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
++p0.print_type();
++v0::Printer::<'a, 'b, 's>::print_type(p0);
++crate::v0::Printer::<'a, 'b, 's>::print_type(p0);
++<v0::Printer<'a, 'b, 's>>::print_type(p0);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_path_maybe_open_generics
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
++p0.print_path_maybe_open_generics();
++v0::Printer::<'a, 'b, 's>::print_path_maybe_open_generics(p0);
++crate::v0::Printer::<'a, 'b, 's>::print_path_maybe_open_generics(p0);
++<v0::Printer<'a, 'b, 's>>::print_path_maybe_open_generics(p0);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_dyn_trait
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
++p0.print_dyn_trait();
++v0::Printer::<'a, 'b, 's>::print_dyn_trait(p0);
++crate::v0::Printer::<'a, 'b, 's>::print_dyn_trait(p0);
++<v0::Printer<'a, 'b, 's>>::print_dyn_trait(p0);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_const
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = true; // None+bool
++p0.print_const(p1);
++v0::Printer::<'a, 'b, 's>::print_const(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::print_const(p0, p1);
++<v0::Printer<'a, 'b, 's>>::print_const(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_const_uint
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
+let mut p1 = 0u8; // None+u8
++p0.print_const_uint(p1);
++v0::Printer::<'a, 'b, 's>::print_const_uint(p0, p1);
++crate::v0::Printer::<'a, 'b, 's>::print_const_uint(p0, p1);
++<v0::Printer<'a, 'b, 's>>::print_const_uint(p0, p1);
+-----------------
+src/v0.rs v0::Printer::<'a, 'b, 's>::print_const_str_literal
+'a,'b,'s
+deps:{}
+candidates:{}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // v0::Printer<'a, 'b, 's>
++p0.print_const_str_literal();
++v0::Printer::<'a, 'b, 's>::print_const_str_literal(p0);
++crate::v0::Printer::<'a, 'b, 's>::print_const_str_literal(p0);
++<v0::Printer<'a, 'b, 's>>::print_const_str_literal(p0);
+-----------------
+src/lib.rs <TryDemangleError as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // TryDemangleError
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<TryDemangleError as core::fmt::Debug>::fmt(p0, p1);
++crate::<TryDemangleError as core::fmt::Debug>::fmt(p0, p1);
++<TryDemangleError>::fmt(p0, p1);
+-----------------
+src/lib.rs <TryDemangleError as core::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // TryDemangleError
++p0.clone();
++<TryDemangleError as core::clone::Clone>::clone(p0);
++crate::<TryDemangleError as core::clone::Clone>::clone(p0);
++<TryDemangleError>::clone(p0);
+-----------------
+src/lib.rs Demangle::<'a>::as_str
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Demangle<'a>
++p0.as_str();
++Demangle::<'a>::as_str(p0);
++crate::Demangle::<'a>::as_str(p0);
++<Demangle<'a>>::as_str(p0);
+-----------------
+src/lib.rs <DemangleStyle<'a> as core::fmt::Display>::fmt
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // DemangleStyle<'a>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<DemangleStyle<'a> as core::fmt::Display>::fmt(p0, p1);
++crate::<DemangleStyle<'a> as core::fmt::Display>::fmt(p0, p1);
++<DemangleStyle<'a>>::fmt(p0, p1);
+-----------------
+src/lib.rs <SizeLimitExhausted as core::clone::Clone>::clone
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SizeLimitExhausted
++p0.clone();
++<SizeLimitExhausted as core::clone::Clone>::clone(p0);
++crate::<SizeLimitExhausted as core::clone::Clone>::clone(p0);
++<SizeLimitExhausted>::clone(p0);
+-----------------
+src/lib.rs <SizeLimitExhausted as core::fmt::Debug>::fmt
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // SizeLimitExhausted
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<SizeLimitExhausted as core::fmt::Debug>::fmt(p0, p1);
++crate::<SizeLimitExhausted as core::fmt::Debug>::fmt(p0, p1);
++<SizeLimitExhausted>::fmt(p0, p1);
+-----------------
+src/lib.rs <SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str
+deps:{"<SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str":{"F":["core::fmt::Write","core::marker::Sized"]}}
+candidates:{"<SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str":{}}
+let mut p0 = &mut  MaybeUninit::uninit().assume_init(); // SizeLimitedFmtAdapter<F>
+let mut p1 = "sample"; // None+&str
++p0.write_str(&p1);
++<SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str(p0, &p1);
++crate::<SizeLimitedFmtAdapter<F> as core::fmt::Write>::write_str(p0, &p1);
++<SizeLimitedFmtAdapter<F>>::write_str(p0, &p1);
+-----------------
+src/lib.rs <Demangle<'a> as core::fmt::Display>::fmt
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Demangle<'a>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<Demangle<'a> as core::fmt::Display>::fmt(p0, p1);
++crate::<Demangle<'a> as core::fmt::Display>::fmt(p0, p1);
++<Demangle<'a>>::fmt(p0, p1);
+-----------------
+src/lib.rs <Demangle<'a> as core::fmt::Debug>::fmt
+'a
+deps:{}
+candidates:{}
+let mut p0 = & MaybeUninit::uninit().assume_init(); // Demangle<'a>
+let mut p1 = &mut  MaybeUninit::uninit().assume_init(); // core::fmt::Formatter<'_>
++p0.fmt(p1);
++<Demangle<'a> as core::fmt::Debug>::fmt(p0, p1);
++crate::<Demangle<'a> as core::fmt::Debug>::fmt(p0, p1);
++<Demangle<'a>>::fmt(p0, p1);
