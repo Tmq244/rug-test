@@ -8,7 +8,7 @@ import sys
 from ollama import Client, ChatResponse
 import tiktoken
 import time
-import multiprocessing
+import multiprocessing 
 
 init_content = """
 You are an expert in Rust and I need your help on development. I will provide you the context and definition or sample 
